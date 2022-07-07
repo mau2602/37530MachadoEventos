@@ -8,7 +8,7 @@ function show(){
     if (helmet == "si"){
         helmetAdd = 25;
     }
-    if (weeksEntry == ""){
+    if (weeksEntry == ""|| weeksEntry <= 0){
         alert(`Debes seleccionar la duracion del alquiler`)
     } else {
         alert(`Has alquilado la moto ${selectBike} por ${weeksEntry} semanas. El precio final es ${(weeksEntry * price) + helmetAdd}.`)
